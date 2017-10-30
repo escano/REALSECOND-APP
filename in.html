@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+    <link rel="stylesheet" href="css/my-app.css">
+    
+     <h1> <B><title> My NBA List</title></h1><B>
+   
+<link rel="stylesheet" href="css/framework7.ios.min.css">
+    <link rel="stylesheet" href="css/framework7.ios.colors.min.css">
+    <link rel="stylesheet" href="css/my-app.css">
+
+     </head>
+    <body>
+
+       <div class="app">
+      <center><font color="black"> <b> <h1>My Info List</></h1></b></div></font>
+       <center><img src="img/lol.jpg"></center>
+      <marquee style="font-family:Book Antiqua; color: #FFFFFF" bgcolor="#000080" scrolldelay="50">Insert Information NOW !!!</marquee>
+        
+
+         <table>
+
+    <tr>
+        <td colspan="3">
+            <textarea id='inputTextToSave' cols="30" rows="20"></textarea>
+        </td>
+    </tr>
+  
+   
+</table>
+
+ <button id='save'onclick="saveTextAsFile()">Save</button>
+ <a href="index.html"><input type="reset" value=Cancel></a></center>
+    
+        <script type="text/javascript">
+
+
+
+
+function saveTextAsFile()
+{
+
+    var save = document.getElementById('inputTextToSave').value;
+    localStorage.setItem("text",save);
+}
+
+</script>                    
+  </body>
+</html>
